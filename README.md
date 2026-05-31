@@ -2,10 +2,11 @@
 
 Dotfiles for an Arch Linux + Hyprland setup featuring a dynamic theme based on pywal.
 
+## Dependencies
+
 ---
 
 ```bash
-## Dependencies
 
 yay -S hyprland waybar rofi dunst kitty fish python-pywal awww neovim pokemon-colorscripts-git eza starship
 
