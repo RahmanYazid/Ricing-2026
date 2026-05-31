@@ -1,0 +1,114 @@
+// ~/.config/waybar/config.jsonc — omarchy style
+{
+  "layer": "top",
+  "position": "top",
+  "height": 36,
+  "margin-top": 6,
+  "margin-left": 150,
+  "margin-right": 150,
+  "spacing": 4,
+  "exclusive": true,
+
+  // — layout tiga kolom —
+  "modules-left": [
+    "custom/arch",	   
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+
+	// Bagian bawah: Definisi modul custom/arch
+    "custom/arch": {
+        "format": " ", // Ikon Arch (Nerd Font)
+        "on-click": "rofi -show drun", // Opsional: buka menu saat diklik
+        "tooltip": false
+    },
+
+
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "cpu",
+    "memory",
+
+	  "network",
+    "pulseaudio",
+    "battery",
+    "tray"
+  ],
+
+  // — workspaces —
+  "hyprland/workspaces": {
+    "format": "{name}", // Menampilkan angka/nama workspace
+    "on-click": "activate",
+    "all-outputs": true,
+    "sort-by-number": true,
+    "persistent-workspaces": {
+        "*": 3 // Ini opsional, membuat workspace 1-5 selalu tampil meskipun kosong
+    }
+
+
+  },
+
+  // — window title —
+  "hyprland/window": {
+    "format": "{title}",
+    "max-length": 40,
+    "separate-outputs": true
+  },
+
+  // — clock —
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%a %d %b}",
+    "tooltip-format": "{:%A, %d %B %Y}",
+    "on-click": "mode"
+  },
+
+
+  "cpu": {
+    "format": "[C] {usage}%",
+    "tooltip": false,
+    "interval": 2
+},
+"memory": {
+	"format": "[M] {percentage}%",
+       "interval": 5    
+
+},
+
+  // — network —
+  "network": {
+    "format-wifi": " {essid}",
+    "format-ethernet": "[N] 5G",
+    "format-disconnected": "󰖪 off",
+    "tooltip-format": "{ipaddr} — {signalStrength}%",
+    "max-length": 20
+
+  },
+
+  // — audio —
+  "pulseaudio": {
+    "format": "[S] {volume}%  ",
+    "format-muted": " mute",
+    "on-click": "pavucontrol",
+    "scroll-step": 5
+  },
+
+  // — battery —
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-icons": ["", "", "", "", ""]
+  },
+
+  // — tray —
+  "tray": {
+    "spacing": 8,
+    "icon-size": 14
+  }
+}
