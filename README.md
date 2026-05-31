@@ -4,12 +4,14 @@ Dotfiles for an Arch Linux + Hyprland setup featuring a dynamic theme based on p
 
 ---
 
+````bash
 ## Dependencies
 
-```bash
-yay -S hyprland waybar rofi dunst kitty fish python-pywal awww neovim
+\```
+yay -S hyprland waybar rofi dunst kitty fish python-pywal awww neovim pokemon-colorscripts-git eza starship
+\```
 
-```
+````
 
 ---
 
