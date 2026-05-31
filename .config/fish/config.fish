@@ -14,3 +14,6 @@ end
 
 alias steam-alt='firejail --private=$HOME/.steam-alt steam'
 alias dotfiles='git --git-dir=/home/zomboid/.dotfiles/ --work-tree=/home/zomboid'
+alias dotfiles='git --git-dir=/home/zomboid/.dotfiles/ --work-tree=/home/zomboid'
+alias dotfiles='git --git-dir=/home/zomboid/.dotfiles/ --work-tree=/home/zomboid'
+alias dotfiles='git --git-dir=/home/zomboid/.dotfiles/ --work-tree=/home/zomboid'
