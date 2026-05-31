@@ -36,9 +36,6 @@ Chmod script:
 
 ```bash
 chmod +x ~/.config/hypr/scripts/theme-switch.sh
-chmod +x ~/.config/waybar/scripts/cava.sh
-chmod +x ~/.config/waybar/scripts/power-menu.sh
-chmod +x ~/.config/waybar/tray-toggle.sh
 ```
 
 Setup pywal dengan wallpaper pilihan:
