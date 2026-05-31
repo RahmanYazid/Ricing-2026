@@ -1,8 +1,0 @@
-# Tambahkan ke script theme-switch.sh bagian rofi:
-rofi -dmenu \
-     -show-icons \
-     -icon-theme "Papirus" \
-     -p "🎨 Theme" \
-     -format p \
-     -kb-custom-1 "ctrl+l"  # light mode
-     -kb-custom-2 "ctrl+d"  # dark mode
